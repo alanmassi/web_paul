@@ -1,0 +1,167 @@
+/*-----------------------------------------------------------footer*/
+.footer{
+	width: 100%;
+    padding: 50px 0;
+	background: transparent;
+	box-sizing: border-box;
+	font-weight: bold;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	position: relative;
+	z-index: 300;
+	border-top: 1px solid rgba(255,255,255,.1);
+}
+.fondoI{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1;
+	opacity: .3;
+}
+.idioma{
+	width: 90px;
+	display: flex;
+	justify-content: center;
+	position: relative;
+	z-index: 300;
+}
+.idioma-main{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	background-image:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7));
+	border: 1px solid rgba(255,255,255,.1);
+	z-index: 300;
+	top: -210px;
+	left: 44%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	display: none;
+}
+.idiomaOn{
+	display: block;
+}
+.icon-earth{
+	margin-right: 5px;
+	color: #00AEFF;
+}
+.idioma-link{
+	width: 160px;
+	display: flex;
+	text-decoration: none;
+	color: rgba(255, 255, 255, .7);
+	margin-left: 10px;
+	margin-top: 10px;
+}
+.idioma-link:hover{
+	color: #00AEFF;
+}
+.idioma:hover{
+	color:white;
+	cursor: pointer;
+}
+.fa-check-circle{
+	margin-right: 5px;
+}
+.idioma-down,
+.idioma-up{
+	margin-left: 5px;
+	display: none;
+}
+.idi-act{
+	display: block;
+}
+.footer-logo{
+	width: 100%;
+	height: 60px;
+	margin: 20px 0;
+	display: flex;
+	justify-content: center;
+}
+.footer-logo-link{
+	height: 100%;
+	outline:none;
+	position: relative;
+	z-index: 300;
+}
+.footer-logo-link:hover .footer-logo-image{
+	-webkit-box-shadow: inset 3px -1px 0px 187px rgba(255,255,255,0.2);
+	-moz-box-shadow: inset 3px -1px 0px 187px rgba(255,255,255,0.2);
+	box-shadow: inset 3px -1px 0px 187px rgba(255,255,255,0.2);
+	transition: 0.3s;
+}
+.footer-logo-image{
+	height: 100%;
+}
+.footer-special{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 300;
+}
+.footer-link{
+	margin: 15px 0;
+	text-decoration: none;
+	color: rgba(255, 255, 255, .4);
+}
+.separator{
+	font-weight: normal;
+	font-size: 0.8em;
+	margin: 0 10px;
+}
+.footer-link:hover{
+	color: white;
+}
+.copyright{
+	width: 70%;
+	margin: 0 15%;
+	font-size: .8em;
+	text-align: center;
+	position: relative;
+	z-index: 300;
+}
+.polity{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	margin: 20px 0;
+	align-items: center;
+	position: relative;
+	z-index: 300;
+}
+.special-link{
+	text-decoration: none;
+	color: rgba(255, 255, 255, .4);
+}
+.special-link:hover{
+	color: white;
+}
+.record{
+	width: 100%;
+	height: 100px;
+	margin-bottom: 150px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: 300;
+}
+.record-link{
+	height: 100%;
+	outline:none;
+	margin: 14px 10px;
+}
+.record-image{
+	height: 100%;
+	width: 100px;
+}
+/*-----------------------------------------------------------footer*/

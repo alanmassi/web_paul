@@ -1,0 +1,343 @@
+/*-----------------------------------------------------------slider*/
+.slider-container-principal{
+	width: 100%;
+	height: 640px;
+	position: relative;
+	top: 0;
+	overflow-x: hidden;
+}
+.slider-container{
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	display: flex;
+	top: 0;
+	left:0;
+	transition: 2s;
+}
+.slider{
+	width: 100vw;
+	height: 100%;
+	background: yellow;
+	position: relative;
+	box-sizing: border-box;
+}
+.imagefondo{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 3;
+}
+.imgmovil{
+	width: 80%;
+	height: 80%;
+	position: absolute;
+	right: -10%;
+	z-index: 4;
+	opacity: 0;
+	animation-duration: 3.1s;
+	animation-delay: 3.5s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	
+}
+@keyframes total{
+	from{
+		right: -10%;
+		opacity: 0;
+	}
+	15%{
+		opacity: .2;
+	}
+	25%{
+		opacity: .4;
+	}
+	50%{
+		opacity: .6;
+	}
+	75%{
+		opacity: .8;
+	}
+	to{
+		right: 10%;
+		opacity: 1;
+	}
+}
+.slider-logo-juego-link{
+	width: 250px;
+	height: 150px;
+	position: absolute;
+	z-index: 4;
+	top: 20%;
+	left: 20%;
+	animation-duration: 1s;
+	animation-delay: 3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	opacity: 0;
+}
+@keyframes entra{
+	from{
+		opacity: 0;
+		left: 20%;
+	}
+	70%{
+		opacity: .5;
+	}
+	to{
+		left: 10%;
+		opacity: 1;
+	}
+}
+.slider-logo-juego-link img{
+	width: 100%;
+	height: auto;
+}
+.slider-title-game-link{
+	width: 700px;
+	text-decoration:none;
+	color: white;
+	display: flex;
+	position: absolute;
+	left: 10%;
+	top: 53%;
+	font-weight: bold;
+	z-index: 4;
+	font-size: 4em;
+	left: 20%;
+	animation-duration: 1s;
+	animation-delay: 3.2s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	opacity: 0;
+}
+.slider-button-link{
+	width: 250px;
+	height: 50px;
+	position: absolute;
+	left: 10%;
+	top: 83%;
+	text-decoration: none;
+	font-size: 1.2em;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 4;
+	background: #0e86ca;
+	left: 20%;
+	animation-duration: 1s;
+	animation-delay: 3.3s;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+	opacity: 0;
+}
+.slider-button-link:hover{
+	background: #00AEFF;
+}
+.slider-container-principal:hover .slider-but{
+	opacity: 1;
+}
+.slider-but{
+	width: 40px;
+	height: 80px;
+	position: absolute;
+	z-index: 155;
+	top: 40%;
+	background: rgba(0,0,0,.5);
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2em;
+	color: #0e86ca;
+	opacity: 0;
+}
+.slider-but:hover{
+	color: #00aeff;
+}
+.prev{
+	left: 5%;
+}
+.next{
+	right: 5%;
+}
+.progress{
+	position: absolute;
+	top: 97%;
+	left: 28.5%;
+	z-index: 5;
+	display: flex;
+}
+.barr-progres{
+	width: 100px;
+	height: 5px;
+	background: rgba(255,255,255,.5);
+	margin: 0 5px;
+	animation-delay: 3s;
+	animation-duration: 4.3s;
+	animation-timing-function: linear;
+}
+@keyframes colorear{
+	from{
+		background: #0e86ca;
+	}
+	to{
+		background: #0e86ca;
+	}
+}
+.relleno{
+	height: 5px;
+	animation-delay: 3s;
+	animation-duration: 4.3s;
+	animation-timing-function: linear;
+}
+@keyframes rellenar{
+	from{
+		width: 0;
+		background: #00aeff;
+	}
+	to{
+		width: 100%;
+		background: #00aeff;
+	}
+}
+@media screen and (max-width: 1240px){
+	.barr-progres{
+	    width: 80px;
+	}
+	.progress{
+		left: 25.5%;
+	}
+}
+@media screen and (min-width: 828px) and (max-width: 1080px){
+	.slider-container-principal{
+		height: 560px;
+	}
+	.slider-title-game-link{
+		width: 550px;
+		font-size: 3em;
+	}
+	.slider-button-link{
+		width: 220px;
+		height: 40px;
+	}
+}
+@media screen and (min-width: 953px) and (max-width: 1080px){
+	.slider-logo-juego-link{
+		top: 16%;
+	}
+	.slider-button-link{
+		width: 220px;
+		height: 40px;
+	}
+	.progress{
+		left: 23.5%;
+	}
+}
+@media screen and (min-width: 765px) and (max-width: 953px){
+	.slider-logo-juego-link{
+		top: 14%;
+	}
+	.slider-title-game-link{
+		width: 550px;
+		font-size: 3em;
+	}
+	.slider-button-link{
+		width: 220px;
+		height: 40px;
+	}
+	.progress{
+		left: 20.5%;
+	}
+}	
+@media screen and (max-width: 768px){
+	.slider-container-principal{
+		height: 420px;
+	}
+	.slider-logo-juego-link{
+		width: 192px;
+		top: 14%;
+	}
+	.slider-title-game-link{
+		width: 550px;
+		font-size: 3em;
+		top: 46%;
+	}
+	.slider-button-link{
+		width: 220px;
+		height: 40px;
+		top: 77%;
+	}
+	.progress{
+		width: 100%;
+		left: 0;
+	}
+	.barr-progres{
+		width: 20%;
+	}
+}
+@media screen and (min-width: 580px) and (max-width: 712px){
+	.slider-container-principal{
+		height: 350px;
+	}
+	.slider-title-game-link{
+		width: 350px;
+		font-size: 2em;
+	}
+	.slider-button-link{
+		width: 174px;
+		height: 25px;
+		top: 77%;
+		font-size: .8em;
+	}
+}
+@media screen and (min-width: 480px)and  (max-width: 581px){
+	.slider-container-principal{
+		height: 270px;
+	}
+	.slider-title-game-link{
+		width: 350px;
+		font-size: 2em;
+	}
+	.slider-logo-juego-link{
+		width: 160px;
+	}
+	.slider-button-link{
+		width: 174px;
+		height: 25px;
+		top: 77%;
+		font-size: .8em;
+	}
+}
+@media screen and (max-width: 480px){
+	.slider-logo-juego-link{
+		width: 100px;
+	}
+	.slider-title-game-link{
+		width: 200px;
+		font-size: 1.2em;
+	}
+	.slider-button-link{
+		width: 174px;
+		height: 25px;
+		top: 77%;
+		font-size: .8em;
+	}
+	.slider-container-principal{
+		height: 217px;
+	}
+}
+@media screen and (max-width: 320px){
+	.slider-container-principal{
+		height: 167px;
+	}
+	.slider-button-link{
+		width: 100px;
+		height: 20px;
+		font-size: .6em;
+	}
+	.slider-title-game-link{
+		font-size: 1.2em;
+	}
+}

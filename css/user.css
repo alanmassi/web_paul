@@ -1,0 +1,189 @@
+.user{
+	width: 96%;
+    padding: 40px 2%;
+	position: relative;
+	top: 60px;
+	display: flex;
+}
+
+.panel{
+	width: 300px;
+	height: 473px;
+	background: rgba(0,0,0,.7);
+	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.nav-panel{
+	width: 100%;
+	display: block;
+	box-sizing: border-box;
+}
+.item{
+	width: 100%;
+	height: 49px;
+	list-style-type: none;
+	box-sizing: border-box;
+}
+.item-link{
+	width: 100%;
+	text-decoration: none;
+	color: white;
+	padding: 15px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	box-sizing: border-box;
+	transition: .1s;
+}
+.item-link i{
+	color: rgba(14,134,202,.5);
+	margin-right: 15px;
+	font-size: 1.2em;
+	box-sizing: border-box;
+}
+.item-link .ma{
+	font-size: 1.9em;
+	margin-left: -5px;
+	margin-right: 8px;
+}
+.item-link .me{
+	margin-left: 5px;
+	margin-right: 20px;
+}
+.item-link .mi{
+	margin-right: 10px;
+}
+.uni{
+	color: #00AEFF;
+}
+hr{
+	width: 88%;
+	margin: 3px auto;
+	border-color:rgba(255,255,255,.1);
+}
+.item-link:hover{
+	background: #0e86ca;
+	border-left: 3px solid #00AEFF;
+}
+.item-link:hover span{
+	color: white;
+}
+.item-link:hover i{
+	color: white;
+}
+.on{
+	border-left: 3px solid #00AEFF;
+	background: rgba(14,134,202,.6);
+}
+.sections{
+	width: 67%;
+	height: 1200px;
+	position: relative;
+	margin-left: 20px;
+}
+.gaSus{
+	width: 100%;
+	position: absolute;
+	display: none;
+}
+.activeON{
+	display: block;
+}
+.gaSus h1{
+	font-size: 3em;
+	color: white;
+	margin-bottom: 45px;
+}
+.option-gasus{
+	width: 100%;
+	margin-bottom: 40px;
+	border-top: 1px solid rgba(255,255,255,.2);
+}
+.title-gasus{
+	width: 100%;
+	height: 70px;
+	background: rgba(14,134,202,.3);
+	font-size: 1.7em;
+	padding: 17px;
+	box-sizing: border-box;
+	color: white;
+	font-weight: bold;
+}
+.desa-gasus{
+	width: 100%;
+	height: 110px;
+	background: rgba(14,134,202,.2);
+	color: rgba(255,255,255,.5);
+}
+.icon-apps{
+	width: 35px;
+	height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	position: fixed;
+	z-index: 400;
+	bottom: 5px;
+	right: 5px;
+	font-size: 1.7em;
+	border-radius: 50%;
+	border: rgba(255,255,255,.4);
+	background: black;
+	color: #00AEFF;
+	display:none;
+}
+
+@media screen and (max-width: 1024px){
+	.gaSus h1{
+		font-size: 2em;
+	}
+	.title-gasus{
+		font-size: 1.4em;
+	}
+}
+@media screen and (max-width: 768px){
+	.user{
+		top: 0px;
+		padding: 20px 2%;
+	}
+	.panel{
+	    width: 200px;
+	}	
+	.item-link{
+		font-size: .8em;
+	}
+}
+@media screen and (max-width: 480px){
+	.sections{
+		width: 100%;
+		margin-left: 0;
+	}
+	.gaSus h1{
+		font-size: 1.2em;
+	}
+	.title-gasus{
+		font-size: 1em;
+	}
+	.panel{
+		background: black;
+		position: fixed;
+		bottom: 35px;
+		right: -9000px;
+	}
+	.nav-panel{
+		background: black;
+	}
+	.icon-apps{
+		display: flex;
+	}
+	.actapp{
+		background: black;
+		position: fixed;
+		right: 0;
+		bottom: 35px;
+	}
+}
